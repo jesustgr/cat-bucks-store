@@ -1,5 +1,7 @@
 # cat-bucks
 
+[Link to the Original Repository](https://github.com/lth1013/cat-bucks-proj2)
+
 ## Technology Used
 
 | Technology Used |                                                    Resource URL                                                    |
