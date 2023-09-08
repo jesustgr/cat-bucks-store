@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Bucks</title>
+    
+    {{!-- <script src="./js/tourguide.js"></script> --}}
+    <link href="
+https://cdn.jsdelivr.net/npm/intro.js@7.2.0/minified/introjs.min.css
+" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    {{!-- <div data-tg-tour="Welcome to the tour"> for </div> --}}
+    <section id="header">
+        <a href="#" class="logo">Cat Bucks</a>
+        <div>
+            <ul id="navbar">
+                <li data-step="1" data-intro="Press this to go back to the homepage"><a href="/">Home</a></li>
+                <li data-step="2" data-intro="Press this to see the cats you can buy!"><a href="/products#cats">Cats</a></li>
+                <li data-step="3" data-intro="Press this to see the awesome toys for your cats!"><a href="/products#toys">Cat Toys</a></li>
+                <li data-step="4" data-intro="Press this to get the food to feed your cats!"><a href="/products#food">Cat Food</a></li>
+                {{!-- <li> ${{session.user.wallet}}</li> --}}
+                <li data-step="5" data-intro="Logout Here"><button type="button" id="logout-button">logout</button></li>
+            </ul>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                    {{!-- {{#if cart}}
+                    {{#each products |product|}}
+                    <li>  <img src={{product.image}} class="product-img" />
+                    <span class="product-title">{{product.product_name}}</span>
+                    <h5>{{product.description}}</h5>
+                    <h4 class="price">${{product.price}}</h4>
+                    </li>
+                    {{/each}}
+                    {{#if}} --}}
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+
+                <!-- Buy button -->
+                <button type="button" class="btn-buy">Buy Now</button>
+
+                <!-- Cart close -->
+                <i class='bx bxs-x-circle' id="close-cart" ></i>
+            </div>
+        </div>  
+    </section>
+    <main>
+      {{{body}}}
+    </main>
+    <script src="
+https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js
+"></script>
+    
+    </body>
+</html>
+
+    <section>
+        <script src="/js/logout.js"></script>
+        <script src="main.js"></script>
+</body>
+</html>
